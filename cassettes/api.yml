@@ -1,0 +1,81 @@
+--- 
+http_interactions: 
+- request: 
+    method: get
+    uri: http://localhost:3000/api/databases.json
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json
+      Content-Length: 
+      - "533"
+      Connection: 
+      - close
+      Server: 
+      - thin 1.5.1 codename Straight Razor
+    body: 
+      encoding: US-ASCII
+      string: "[{\"name\":\"foo\",\"size\":83886080,\"count\":12},{\"name\":\"activecell_test7\",\"size\":83886080,\"count\":1},{\"name\":\"activecell_test\",\"size\":83886080,\"count\":11},{\"name\":\"activecell_test3\",\"size\":83886080,\"count\":10},{\"name\":\"activecell_development\",\"size\":83886080,\"count\":19},{\"name\":\"activecell_test4\",\"size\":83886080,\"count\":1},{\"name\":\"activecell_test5\",\"size\":83886080,\"count\":1},{\"name\":\"activecell_test8\",\"size\":83886080,\"count\":12},{\"name\":\"activecell_test2\",\"size\":83886080,\"count\":9},{\"name\":\"local\",\"size\":1,\"count\":0}]"
+    http_version: 
+  recorded_at: Sun, 09 Jun 2013 20:12:09 GMT
+- request: 
+    method: get
+    uri: http://localhost:3000/api/databases/activecell_test6/collections.json
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json
+      Content-Length: 
+      - "713"
+      Connection: 
+      - close
+      Server: 
+      - thin 1.5.1 codename Straight Razor
+    body: 
+      encoding: US-ASCII
+      string: "[{\"dbName\":\"activecell_test6\",\"name\":\"system.indexes\",\"size\":11},{\"dbName\":\"activecell_test6\",\"name\":\"users\",\"size\":5},{\"dbName\":\"activecell_test6\",\"name\":\"companies\",\"size\":3},{\"dbName\":\"activecell_test6\",\"name\":\"scenarios\",\"size\":3},{\"dbName\":\"activecell_test6\",\"name\":\"revenue_streams\",\"size\":3},{\"dbName\":\"activecell_test6\",\"name\":\"segments\",\"size\":3},{\"dbName\":\"activecell_test6\",\"name\":\"channels\",\"size\":3},{\"dbName\":\"activecell_test6\",\"name\":\"stages\",\"size\":3},{\"dbName\":\"activecell_test6\",\"name\":\"employee_types\",\"size\":3},{\"dbName\":\"activecell_test6\",\"name\":\"categories\",\"size\":3},{\"dbName\":\"activecell_test6\",\"name\":\"company_affiliations\",\"size\":3},{\"dbName\":\"activecell_test6\",\"name\":\"tasks\",\"size\":3}]"
+    http_version: 
+  recorded_at: Sun, 09 Jun 2013 20:12:19 GMT
+- request: 
+    method: get
+    uri: http://localhost:3000/api/databases.json
+    body: 
+      encoding: US-ASCII
+      string: ""
+    headers: {}
+
+  response: 
+    status: 
+      code: 200
+      message: OK
+    headers: 
+      Content-Type: 
+      - application/json
+      Content-Length: 
+      - "533"
+      Connection: 
+      - close
+      Server: 
+      - thin 1.5.1 codename Straight Razor
+    body: 
+      encoding: US-ASCII
+      string: "[{\"name\":\"bar\",\"size\":83886080,\"count\":12},{\"name\":\"activecell_test7\",\"size\":83886080,\"count\":1},{\"name\":\"activecell_test\",\"size\":83886080,\"count\":11},{\"name\":\"activecell_test3\",\"size\":83886080,\"count\":10},{\"name\":\"activecell_development\",\"size\":83886080,\"count\":19},{\"name\":\"activecell_test4\",\"size\":83886080,\"count\":1},{\"name\":\"activecell_test5\",\"size\":83886080,\"count\":1},{\"name\":\"activecell_test8\",\"size\":83886080,\"count\":12},{\"name\":\"activecell_test2\",\"size\":83886080,\"count\":9},{\"name\":\"local\",\"size\":1,\"count\":0}]"
+    http_version: 
+  recorded_at: Sun, 09 Jun 2013 20:12:21 GMT
+recorded_with: VCR 2.5.0
